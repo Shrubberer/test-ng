@@ -1,0 +1,38 @@
+.val {
+    font-weight: bolder !important;
+}
+
+.no-val {
+    font-weight: lighter !important;
+}
+
+mat-form-field {
+    margin-left: 20px;
+    padding-bottom: 0px;
+    padding-top: 6px;
+    width: 106px;
+    font-size: 15px;
+}
+
+mat-label {
+    font-size: 13px;
+}
+
+::ng-deep .mat-mdc-form-field-subscript-wrapper {
+    margin-bottom: -1.25em !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    height: 42px !important;
+}
+
+::ng-deep .mdc-notched-outline {
+    height: 42px !important;
+}
+
+::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    min-height: 0px !important;
+    width: 130px !important;
+}

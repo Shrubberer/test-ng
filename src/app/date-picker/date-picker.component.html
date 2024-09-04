@@ -1,0 +1,18 @@
+<h3>Snapshot Range</h3>
+
+<mat-form-field>
+    <mat-label>Enter a snapshot range</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+        <input matStartDate placeholder="Start Month" [formControl]="startDate">
+        <input matEndDate placeholder="End Month" [formControl]="endDate">
+    </mat-date-range-input>
+    <mat-hint>MM/YYYY – MM/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker 
+        startView="multi-year" 
+        (monthSelected)="setMonthAndYear($event, picker)"
+        panelClass="example-month-picker">
+    </mat-date-range-picker>
+</mat-form-field>
+    
+
